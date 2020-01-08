@@ -1,0 +1,83 @@
+{{define "section-link"}}
+<a href="{{.Section.PrimaryTag | url}}" {{if eq .Section.PrimaryTag.Name .Current.PrimaryTag.Name}} class="self"{{end}}>
+  {{- .Section.Title | stripAux | render -}}
+</a>
+{{end}}
+
+<div class="context">
+  <nav>
+    <div class="top">
+      {{template "section-link" walkContext $ .Top}}
+    </div>
+
+    {{if .Top.Children}}
+    <input type="checkbox" class="toggle" {{if .Top.Contains .}}checked{{end}} />
+    <span class="arrow"></span>
+    <div class="children">
+      <table>
+      {{range .Top.Children}}
+        <tr>
+          <td class="number-cell" align="right">{{.Number}}&nbsp;</td>
+          <td class="title-cell">{{template "section-link" walkContext $ .}}</td>
+        </tr>
+      {{end}}
+      </table>
+    </div>
+    {{end}}
+  </nav>
+</div>
+
+{{if and .Parent .Children}}
+<div class="context">
+  <nav>
+    <div class="top">
+      {{.Number}}&nbsp;{{template "section-link" walkContext $ .}}
+    </div>
+
+    <input type="checkbox" class="toggle" {{if .Top.Contains .}}checked{{end}} />
+    <span class="arrow"></span>
+    <div class="children">
+      <table>
+      {{range .Children}}
+        <tr>
+          <td class="number-cell" align="right">{{.Number}}&nbsp;</td>
+          <td class="title-cell">{{template "section-link" walkContext $ .}}</td>
+        </tr>
+      {{end}}
+      </table>
+    </div>
+  </nav>
+</div>
+{{end}}
+
+{{if .HasAnchors}}
+<div class="context">
+  <div class="top">
+    On this page:
+  </div>
+
+  <nav>
+    <div class="children">
+      <table>
+        {{range .AnchorTags}}
+        <tr>
+          <td colspan="2" class="title-cell"><a href="{{. | url}}">{{.Title | render}}</a></td>
+        </tr>
+        {{end}}
+        {{range .Children}}
+        <tr>
+          <td class="number-cell" align="right">{{.Number}}&nbsp;</td>
+          <td class="title-cell">{{template "section-link" walkContext $ .}}</td>
+        </tr>
+          {{range .AnchorTags}}
+          <tr>
+            <td class="number-cell" align="right"></td>
+            <td class="title-cell"><a href="{{. | url}}">{{.Title | render}}</a></td>
+          </tr>
+          {{end}}
+        {{end}}
+      </table>
+    </div>
+  </nav>
+</div>
+{{end}}

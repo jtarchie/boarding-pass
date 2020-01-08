@@ -1,0 +1,173 @@
+\title{Boarding Pass}{index}
+
+Welcome to the Concourse team!
+
+Quick links:
+
+\list{
+  CI: \link{ci.concourse-ci.org}{https://ci.concourse-ci.org} (see \reference{prod})
+}{
+  Code: \link{github.com/concourse/concourse}{https://github.com/concourse/concourse}
+}{
+  Docs: \link{github.com/concourse/docs}{https://github.com/concourse/docs}
+}{
+  Roadmap: \link{project.concourse-ci.org}{https://project.concourse-ci.org}
+}
+
+This team may feel a bit different from a labs engagement or internal product
+team. Our customer is the open-source community. Value is delivered not only
+through completing features, but through engaging with the community and making
+it easier for community members to grow into contributors. For this reason
+there is an emphasis on \italic{doing the right thing} and \italic{being kind}.
+
+Concourse is a large project, so it may take a while before it feels like
+you're up to speed. That's OK. To make things easier, we divided Concourse up
+into various conceptual \reference{domains}{domains}. Each domain works with
+different tools and has a different subject matter. You're free to rotate
+between domains at any time, though you may want to try sticking with one for a
+while at first.
+
+The front-end is written in \link{Elm}{https://elm-lang.org} and everything
+else is written in \link{Go}{https://golang.org}. This document, as well as all
+of the Concourse documentation, is written using
+\link{Booklit}{https://github.com/vito/booklit}. If you ever say anything bad
+about it it will make Alex sad. This is to be avoided. The rest of what you'll
+need to know really depends on the domain, so go check them out!
+
+\split-sections
+
+\section{
+  \title{Domains}
+
+  \italic{A.K.A. "sub-teams", "tracks"}
+
+  As a member of Concourse team, you'll probably be working on something that
+  falls under one of the following categories.
+
+  Historically, these have been represented as tracks which act as
+  semi-autononomous sub-teams within Concourse. This division is primarily to
+  help break the scope of Concourse into more smaller, more manageable pieces
+  for someone joining the team.
+
+  \section{
+    \title{Core}
+  }
+
+  \section{
+    \title{UX}
+  }
+
+  \section{
+    \title{Runtime}
+  }
+
+  \section{
+    \title{Pivotal Concourse}
+  }
+}
+
+\section{
+  \title{Environments}
+
+  \section{
+    \title{Production}{prod}
+
+    Production, or "prod", is our Concourse instance that builds, tests, and
+    ships Concourse itself.
+
+    It can be accessed at
+    \link{ci.concourse-ci.org}{https://ci.concourse-ci.org}. It is publicly
+    viewable.
+
+    \section{
+      \title{Operation}
+
+      TODO: Can we move the metrics DNS to metrics.concourse-ci.org?
+
+      TODO: How do we deploy prod?
+
+      TODO: How is the prod database managed/deployed?
+      TODO: How do I connect to the prod database?
+
+      TODO: How do I find the logs of the `web` and `worker` nodes?
+      TODO: How do I take a stack dump or debug a `web` node?
+    }
+  }
+
+  \section{
+    \title{Hush-House}
+
+    Hush House is a multi-tenant Concourse cluster being used by teams within
+    Pivotal. It is our responsibility to keep it running as efficiently and
+    smoothly as possible - hence the \reference{hush-house-slis}.
+
+    \section{
+      \title{Operation}
+
+      TODO: How do we deploy Hush House?
+
+      TODO: How is the Hush House database managed/deployed?
+      TODO: How do I connect to the Hush House database?
+
+      TODO: How do I find the logs of the `web` and `worker` nodes?
+      TODO: How do I take a stack dump or debug a `web` node?
+    }
+
+    \section{
+      \title{Hush-House SLIs}
+
+      TODO: What do I look for when I get paged?
+    }
+  }
+}
+
+\section{
+  \title{Roles & Responsibilities}
+
+  \section{
+    \title{Concourse OSS Lead}
+
+    Who: Alex Suraci
+
+    What: idk lol leading oss
+  }
+
+  \section{
+    \title{Product & Design}
+
+    Who: Alex Suraci, Lindsay Auchinachie, Daniel de Repentigny, Matthew Periera
+  }
+
+  \section{
+    \title{Contributor}
+
+    \list{
+      writing code (duh)
+    }
+  }
+}
+
+\section{
+  \title{Processes}
+
+  \section{
+    \title{Pairing & Code Review}
+  }
+
+  \section{
+    \title{IPMs}
+
+    TODO: Issue sizing
+  }
+
+  \section{
+    \title{RFCs}
+
+    RFCs are a way for anyone in the community, including Concourse team
+    members, to collaborate on ideas for Concourse.
+  }
+
+  \section{
+    \title{Design Studios}
+  }
+}

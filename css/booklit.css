@@ -1,0 +1,256 @@
+:root {
+  --background: #fff;
+  --foreground: #3d3c3c;
+
+  --foreground-light: #5a5555;
+
+  --link: #2d76cc;
+  --link-visited: #4a90e2;
+
+  --code-background: #efeeee;
+
+  --code-border: #e6e5e5;
+  --sidebar-border: #e6e5e5;
+}
+
+html {
+  display: flex;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--link);
+}
+
+code, pre {
+  font-family: 'Iosevka', monospace;
+}
+
+pre {
+  background: var(--code-background);
+  border-bottom: 1px solid var(--code-border);
+  padding: .5rem;
+}
+
+code code {
+  font-size: 1em;
+}
+
+.page code {
+  background: var(--code-background);
+  border-bottom: 1px solid var(--code-border);
+  padding: .1em .2em;
+  white-space: nowrap;
+}
+
+.page code code, .definition-thumb code {
+  border: 0;
+  padding: 0;
+}
+
+.page a code {
+  color: var(--foreground);
+}
+
+.page a:hover code strong {
+  text-decoration: underline;
+}
+
+h1 code, h2 code, h3 code {
+  font-weight: 600;
+  font-size: .9em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 1px solid var(--code-border);
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px dotted var(--code-border);
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h2, h3 {
+  margin-top: 2rem;
+}
+
+.page.top h1 {
+  font-size: 2em;
+  line-height: 60px;
+  border-bottom: 0;
+
+  background: url('images/logo.svg') no-repeat;
+  background-size: 60px;
+  text-indent: 75px;
+}
+
+.page {
+  width: 600px;
+  padding: 3rem;
+  padding-right: 5rem;
+}
+
+.side {
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  width: 250px;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  color: var(--foreground-light);
+}
+
+.side .context {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.side .context a.self {
+  color: var(--foreground);
+}
+
+.side .context .top {
+  padding-left: 1.2rem;
+  font-size: 1.1em;
+}
+
+.side .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.4rem;
+  z-index: 2;
+  opacity: 0;
+}
+
+.side .toggle:focus {
+  outline: none;
+}
+
+.side .arrow:after, .side .toggle:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\25ba";
+  line-height: 1.4rem;
+  font-size: .75rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.side .toggle:checked + .arrow:after {
+  content: "\25bc";
+}
+
+.side .toggle:not(:checked) + .arrow + .children {
+  display: none;
+}
+
+.side .children {
+  border-left: 1px solid var(--sidebar-border);
+  margin-left: .35rem;
+  padding-left: .8rem;
+}
+
+.side .children table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.side table td {
+  vertical-align: top;
+}
+
+.section-number {
+  margin-right: .4rem;
+}
+
+.definition-thumb {
+  background: var(--code-background);
+  border-bottom: 2px solid var(--code-border);
+  padding: .2rem .5rem;
+  margin-top: 2em;
+}
+
+.definition-thumb a {
+  color: inherit;
+}
+
+.definition-thumb a:hover {
+  text-decoration: underline;
+}
+
+.definition-content {
+  border-bottom: 1px dotted var(--code-border);
+  padding: 0 0 1em 1em;
+  margin-bottom: 2rem;
+}
+
+.definition-content:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.page {
+  position: relative;
+}
+
+.aside {
+  background: var(--code-background);
+  border-left: 1px solid var(--code-border);
+  padding: .5em .75em;
+  color: var(--foreground-light);
+}
+
+.aside p:first-child {
+  margin-top: 0;
+}
+
+.aside p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 961px) {
+  .aside {
+    box-sizing: border-box;
+    margin: 0;
+    width: 200px;
+    position: absolute;
+    right: -200px;
+  }
+}
