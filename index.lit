@@ -15,14 +15,19 @@ Quick links:
 }
 
 This team may feel a bit different from a labs engagement or internal product
-team. Our customer is the open-source community. Value is delivered not only
-through completing features, but through engaging with the community and making
-it easier for community members to grow into contributors. For this reason
-there is an emphasis on \italic{doing the right thing} and \italic{being kind}.
+team. Our customer is the open-source community, and there are many
+stakeholders - every software engineer on earth should be using CI/CD! Our
+challenge is to continue to build Concourse as a product that doesn't cut
+corners and doesn't grow into a tangled web.
+
+Value is delivered not only through completing features, but through engaging
+with the community and enabling community members to grow into contributors.
+For this reason there is greater emphasis on \italic{doing the right thing} and
+\italic{being kind}.
 
 Concourse is a large project, so it may take a while before it feels like
 you're up to speed. That's OK. To make things easier, we divided Concourse up
-into various conceptual \reference{domains}{domains}. Each domain works with
+into a few conceptual \reference{domains}{domains}. Each domain works with
 different tools and has a different subject matter. You're free to rotate
 between domains at any time, though you may want to try sticking with one for a
 while at first.
@@ -37,32 +42,52 @@ need to know really depends on the domain, so go check them out!
 \split-sections
 
 \section{
-  \title{Domains}
-
-  \italic{A.K.A. "sub-teams", "tracks"}
-
-  As a member of Concourse team, you'll probably be working on something that
-  falls under one of the following categories.
-
-  Historically, these have been represented as tracks which act as
-  semi-autononomous sub-teams within Concourse. This division is primarily to
-  help break the scope of Concourse into more smaller, more manageable pieces
-  for someone joining the team.
+  \title{Teams}
 
   \section{
-    \title{Core}
-  }
+    \title{Concourse OSS}
 
-  \section{
-    \title{UX}
-  }
+    The Concourse OSS team is responsible for developing and shipping
+    Concourse.
 
-  \section{
-    \title{Runtime}
+    \section{
+      \title{Domains}
+
+      \italic{A.K.A. "sub-teams", "tracks"}
+
+      As a member of Concourse OSS team, you'll probably be working on something
+      that falls under one of the following categories.
+
+      Historically, these have been represented as tracks which act as
+      semi-autononomous sub-teams within Concourse. This division is primarily to
+      help break the scope of Concourse into more smaller, more manageable pieces
+      for someone joining the team.
+
+      \section{
+        \title{Core}
+      }
+
+      \section{
+        \title{UX}
+      }
+
+      \section{
+        \title{Runtime}
+      }
+    }
   }
 
   \section{
     \title{Pivotal Concourse}
+
+    The Pivotal Concourse team is responsible for getting Concourse into the
+    hands of Pivotal's customers.
+  }
+
+  \section{
+    \title{Resource Types}
+
+    The Duty Free team is responsible
   }
 }
 
@@ -170,4 +195,10 @@ need to know really depends on the domain, so go check them out!
   \section{
     \title{Design Studios}
   }
+}
+
+\section{
+  \title{Glossary}
+
+  TODO
 }
