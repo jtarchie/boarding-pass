@@ -1,21 +1,46 @@
 \title{Teams}
 
 \section{
-  \title{Concourse Open-source}
+  \title{Open-source team}
 
-  The Concourse OSS team is responsible for developing and shipping
-  Concourse.
+  \list{
+    Product Managers: \link{Alex Suraci}{https://github.com/vito}, \link{Daniel
+    de Repentigny}{https://github.com/vito}
+  }{
+    Designers: \link{Lindsay Auchinachie}{https://github.com/Lindsayauchin},
+    \link{Matthew Periera}{https://github.com/matthewpereira}
+  }
+
+  The Concourse OSS team ships Concourse to the open-source community and
+  collaborates with contributors on GitHub.
 }
 
 \section{
-  \title{Pivotal Concourse}
+  \title{Pivotal Concourse team}
 
-  The Pivotal Concourse team is responsible for getting Concourse into the
-  hands of Pivotal's customers.
+  \list{
+    Product Manager: \link{Scott Foerster}{https://github.com/scottietremendous}
+  }{
+    Designers: \link{Lindsay Auchinachie}{https://github.com/Lindsayauchin},
+    \link{Matthew Periera}{https://github.com/matthewpereira}
+  }
+
+  The Pivotal Concourse team ships supported versions of open-source Concourse
+  to enterprise customers and builds on support relationships for customer
+  feedback.
 }
 
 \section{
-  \title{Duty Free}
+  \title{Duty Free team}
 
-  The Duty Free team is responsible
+  \list{
+    Product Manager: \link{Bishoy Youssef}{https://github.com/YoussB}
+  }{
+    Designers: \link{Isha Bagha}{https://github.com/ibagha}
+  }
+
+  The Duty Free team ships the \link{"Resource Types"
+  website}{https://resource-types.concourse-ci.org} (see
+  \reference{duty-free}), where Concourse users can discover
+  community-developed and supported resource types.
 }
