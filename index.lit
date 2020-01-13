@@ -5,76 +5,124 @@ Welcome to the Concourse team!
 Quick links:
 
 \list{
-  CI: \link{ci.concourse-ci.org}{https://ci.concourse-ci.org} (see \reference{prod})
+  CI: \link{ci.concourse-ci.org}{https://ci.concourse-ci.org} (see \reference{ci-environment})
+}{
+  Roadmap: \link{project.concourse-ci.org}{https://project.concourse-ci.org}
 }{
   Code: \link{github.com/concourse/concourse}{https://github.com/concourse/concourse}
 }{
   Docs: \link{github.com/concourse/docs}{https://github.com/concourse/docs}
-}{
-  Roadmap: \link{project.concourse-ci.org}{https://project.concourse-ci.org}
 }
 
-This team may feel a bit different from a labs engagement or internal product
-team. Our customer is the open-source community, and there are many
-stakeholders - every software engineer on earth should be using CI/CD! Our
-challenge is to continue to build Concourse as a product that doesn't cut
-corners and doesn't grow into a tangled web.
+This team may feel a bit different. Our customer is the open-source community,
+and there are many stakeholders; every software engineer on earth should
+probably be using CI/CD. Our challenge is to continue to build Concourse as a
+product that doesn't cut corners and doesn't grow into a tangled web.
 
-Value is delivered not only through completing features, but through engaging
+Value is delivered not only through shipping features, but through engaging
 with the community and enabling community members to grow into contributors.
 For this reason there is greater emphasis on \italic{doing the right thing} and
 \italic{being kind}.
 
 Concourse is a large project, so it may take a while before it feels like
-you're up to speed. That's OK. To make things easier, we divided Concourse up
-into a few conceptual \reference{domains}{domains}. Each domain works with
-different tools and has a different subject matter. You're free to rotate
-between domains at any time, though you may want to try sticking with one for a
-while at first.
+you're up to speed. This is a feeling that we're all familiar with. If you ever
+feel overwhelmed or just have questions don't hesitate to reach out to anyone
+in the \reference{roles} page or any of your teammates for support.
+
+To make onboarding a bit easier, we divided the required knowledge about the
+Concourse codebase into separate \reference{tracks}. Each track has a different
+subject matter and works with different languages and tools. You're free to
+rotate between tracks at any time, though you may want to try sticking with one
+for a while at first.
 
 The front-end is written in \link{Elm}{https://elm-lang.org} and everything
 else is written in \link{Go}{https://golang.org}. This document, as well as all
 of the Concourse documentation, is written using
 \link{Booklit}{https://github.com/vito/booklit}. If you ever say anything bad
-about it it will make Alex sad. This is to be avoided. The rest of what you'll
-need to know really depends on the domain, so go check them out!
+about it it will make Alex sad. The rest of what you'll need to know really
+depends on the track, so go check them out!
 
 \split-sections
+
+\section{
+  \title{Roles}
+
+  \section{
+    \title{Open-source Lead}
+
+    The open-source Concourse project lead is \link{Alex
+    Suraci}{https://github.com/vito}, who is also writing this document - hi!
+
+    My responsibility is to develop the Concourse product so that it meets the
+    needs of its open-source community. This also means enabling the growth of
+    community members into contributors so that our team does not become a
+    bottleneck for development and support.
+  }
+
+  \section{
+    \title{Product & Design}
+
+    The role of product & design is to engage with each of our stakeholders
+    (whether they're customers or community members) and collaborate to devise
+    roadmaps for our team to execute on.
+
+    \link{Scott Foster}{https://github.com/scottietremendous} develops the
+    roadmap for enterprise users, i.e. Pivotal/VMware customers, who use
+    Concourse at large scale and need it to be resilient, efficient, and easy
+    to operate.
+
+    \link{Alex Suraci}{https://github.com/vito} (hi again!) develops the
+    long-term core roadmap based on the many different workflows found in the
+    open-source community - i.e. the \italic{continuous thing doing} aspect of
+    Concourse.
+
+    \link{Daniel de Repentigny}{https://github.com/danielder-pivotal} keeps us
+    grounded in reality, addressing the needs of existing users who are largely
+    satisfied with Concourse's feature set, but need it to be more polished,
+    coherent, and easy to use \italic{in anger}.
+
+    \link{Lindsay Auchinachie}{https://github.com/Lindsayauchin} and
+    \link{Matthew Periera}{https://github.com/matthewpereira} work together to
+    build a clean and intuitive user experience for Concourse, interviewing
+    open-source users and customers to build and demo prototypes to make sure
+    we're building the right thing.
+
+    High-impact parts of the roadmap are proposed through \reference{rfcs}
+    where we can work directly with the community and as a team to validate and
+    come to consensus on new ideas.
+  }
+
+  \section{
+    \title{Contributors}
+
+    Technically, a \italic{Concourse contributor} is anyone who contributes to
+    the improvement of Concourse. This includes everyone mentioned on this page
+    and all members of the Concourse team.
+
+    Coloquially, this usually means someone who submits pull requests.
+  }
+
+  \section{
+    \title{Track Anchor}
+
+    Each \reference{tracks}{track} has a \italic{track anchor}.
+  }
+
+  \section{
+    \title{Technical Writer}
+
+    Just kidding! We don't really have one. But we need one!
+  }
+}
 
 \section{
   \title{Teams}
 
   \section{
-    \title{Concourse OSS}
+    \title{Concourse Open-source}
 
     The Concourse OSS team is responsible for developing and shipping
     Concourse.
-
-    \section{
-      \title{Domains}
-
-      \italic{A.K.A. "sub-teams", "tracks"}
-
-      As a member of Concourse OSS team, you'll probably be working on something
-      that falls under one of the following categories.
-
-      Historically, these have been represented as tracks which act as
-      semi-autononomous sub-teams within Concourse. This division is primarily to
-      help break the scope of Concourse into more smaller, more manageable pieces
-      for someone joining the team.
-
-      \section{
-        \title{Core}
-      }
-
-      \section{
-        \title{UX}
-      }
-
-      \section{
-        \title{Runtime}
-      }
-    }
   }
 
   \section{
@@ -85,24 +133,71 @@ need to know really depends on the domain, so go check them out!
   }
 
   \section{
-    \title{Resource Types}
+    \title{Duty Free}
 
     The Duty Free team is responsible
   }
 }
 
 \section{
-  \title{Environments}
+  \title{Tracks}
+
+  In order to make onboarding and rotation less overwhelming, the scope of
+  Concourse OSS is currently divided into three tracks with less frequent
+  rotation between them. Each track has its own backlog, IPM, and retro, so
+  they're kinda like sub-teams within Concourse.
+
+  Rotation between tracks is a developing process; for more information see
+  \reference{track-rotation}.
 
   \section{
-    \title{Production}{prod}
+    \title{UX track}
 
-    Production, or "prod", is our Concourse instance that builds, tests, and
-    ships Concourse itself.
+    The UX track is all about the front-end user experience, i.e. the web UI.
 
-    It can be accessed at
-    \link{ci.concourse-ci.org}{https://ci.concourse-ci.org}. It is publicly
-    viewable.
+    Concourse's web UI is written in \link{Elm}{https://elm-lang.org}, which is
+    a fairly new and shiny functional programming language which brings a
+    pretty refreshing and simple paradigm to front-end development.
+  }
+
+  \section{
+    \title{Core track}
+
+    The Core domain is centered around the concepts and abstractions that
+    Concourse provides.
+
+    The primary challenge of this track is to arrive at a simple set of
+    primitives that accomodate the many workflows of Concourse's users without
+    turning into a complicated mess of overlapping or extraneous functionality.
+  }
+
+  \section{
+    \title{Runtime track}
+
+    The Runtime domain brings Concourse to life, executing pipeline workloads
+    as containers running across a pool of workers.
+
+    Runtime challenges include efficient container scheduling across worker
+    pools, supporting multiple runtimes (Kubernetes, containerd, possibly Nomad
+    in the future), managing artifacts such as task and resource caches, and
+    improving the overall resiliency and efficiency of the user's workloads.
+  }
+}
+
+\section{
+  \title{Environments}
+
+  The Concourse team maintains a few deployments. The day will eventually come
+  when you have to do something to one of them. This page is here for you to
+  remember when you're panicking.
+
+  \section{
+    \title{\code{ci} environment}
+
+    \link{CI}{https://ci.concourse-ci.org} is our Concourse instance that
+    builds, tests, and ships Concourse itself. It is publicly viewable and also
+    hosts a handful of example pipelines which are referenced from the
+    documentation \link{here}{https://concourse-ci.org/examples.html}.
 
     \section{
       \title{Operation}
@@ -120,11 +215,12 @@ need to know really depends on the domain, so go check them out!
   }
 
   \section{
-    \title{Hush-House}
+    \title{\code{hush-house} environment}
 
-    Hush House is a multi-tenant Concourse cluster being used by teams within
-    Pivotal. It is our responsibility to keep it running as efficiently and
-    smoothly as possible - hence the \reference{hush-house-slis}.
+    \link{Hush House}{https://hush-house.pivotal.io} is a multi-tenant
+    Concourse cluster being used by teams within Pivotal. It is our
+    responsibility to keep it running as efficiently and smoothly as possible -
+    hence the \reference{hush-house-slis}.
 
     \section{
       \title{Operation}
@@ -144,31 +240,14 @@ need to know really depends on the domain, so go check them out!
       TODO: What do I look for when I get paged?
     }
   }
-}
-
-\section{
-  \title{Roles & Responsibilities}
 
   \section{
-    \title{Concourse OSS Lead}
+    \title{\code{wings} environment}
 
-    Who: Alex Suraci
-
-    What: idk lol leading oss
-  }
-
-  \section{
-    \title{Product & Design}
-
-    Who: Alex Suraci, Lindsay Auchinachie, Daniel de Repentigny, Matthew Periera
-  }
-
-  \section{
-    \title{Contributor}
-
-    \list{
-      writing code (duh)
-    }
+    \link{Wings}{https://wings.pivotal.io} is the precursor to Hush-House. It
+    is deprecated and will be removed soon (probably by March 2020). You
+    probably don't have to know anything about it, but as long as the
+    environment still exists this page will at least acknowledge it.
   }
 }
 
@@ -177,6 +256,10 @@ need to know really depends on the domain, so go check them out!
 
   \section{
     \title{Pairing & Code Review}
+  }
+
+  \section{
+    \title{Track Rotation}{track-rotation}
   }
 
   \section{
