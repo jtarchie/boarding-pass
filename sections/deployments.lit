@@ -1,11 +1,27 @@
-\title{Environments}
+\title{Deployments}
 
 The Concourse team maintains a few deployments. The day will eventually come
 when you have to do something to one of them. This page is here for you to
 remember when you're panicking.
 
 \section{
-  \title{\code{ci} environment}
+  \title{Docs\aux{ (\code{concourse-ci.org})}}{docs-website}
+
+  The \link{Concourse Docs}{https://concourse-ci.org} is the face of Concourse,
+  providing the landing page and all documentation for the latest version of
+  Concourse.
+
+  \section{
+    \title{Operation}
+
+    The docs are automatically built from the \link{\code{concourse/docs}
+    repo}{https://github.com/concourse/docs} and deployed via GitHub pages
+    whenever a new version of Concourse is released.
+  }
+}
+
+\section{
+  \title{CI\aux{ (\code{ci.concourse-ci.org})}}{ci-environment}
 
   \link{CI}{https://ci.concourse-ci.org} is our Concourse instance that
   builds, tests, and ships Concourse itself. It is publicly viewable and also
@@ -28,7 +44,7 @@ remember when you're panicking.
 }
 
 \section{
-  \title{\code{hush-house} environment}
+  \title{Hush House\aux{ (\code{hush-house.pivotal.io})}}
 
   \link{Hush House}{https://hush-house.pivotal.io} is a multi-tenant
   Concourse cluster being used by teams within Pivotal. It is our
@@ -48,17 +64,47 @@ remember when you're panicking.
   }
 
   \section{
-    \title{Hush-House SLIs}
+    \title{SLIs}{hush-house-slis}
 
     TODO: What do I look for when I get paged?
   }
 }
 
 \section{
-  \title{\code{wings} environment}
+  \title{Wings\aux{ (\code{wings.pivotal.io})}}
 
   \link{Wings}{https://wings.pivotal.io} is the precursor to Hush-House. It
   is deprecated and will be removed soon (probably by March 2020). You
   probably don't have to know anything about it, but as long as the
   environment still exists this page will at least acknowledge it.
+}
+
+\section{
+  \title{Duty Free\aux{ (\code{resource-types.concourse-ci.org})}}
+
+  \link{Duty Free}{https://resource-types.concourse-ci.org} is a deployment of
+  \link{\code{concourse/resource-types-website}}{https://github.com/concourse/resource-types-website},
+  developed and shipped by the \reference{duty-free-team} as a central
+  repository of community-submitted (and supported) resource types.
+
+  \section{
+    \title{Operation}
+
+    I dunno, ask Bishoy!
+  }
+}
+
+\section{
+  \title{Cadet\aux{ (\code{project.concourse-ci.org})}}
+
+  \link{Cadet}{https://project.concourse-ci.org} is a deployment of
+  \link{\code{vito/cadet}}{https://github.com/vito/cadet}, a side-project for
+  making our day-to-day interactions with GitHub a bit easier.
+
+  \section{
+    \title{Operation}
+
+    It is currently deployed and maintained by Alex willy-nilly. (I'll automate
+    it eventually! ...I promise!)
+  }
 }

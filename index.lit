@@ -47,6 +47,6 @@ depends on the track, so go check them out!
 \include-section{sections/roles.lit}
 \include-section{sections/teams.lit}
 \include-section{sections/tracks.lit}
-\include-section{sections/environments.lit}
+\include-section{sections/deployments.lit}
 \include-section{sections/processes.lit}
 \include-section{sections/glossary.lit}
