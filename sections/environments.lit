@@ -1,0 +1,64 @@
+\title{Environments}
+
+The Concourse team maintains a few deployments. The day will eventually come
+when you have to do something to one of them. This page is here for you to
+remember when you're panicking.
+
+\section{
+  \title{\code{ci} environment}
+
+  \link{CI}{https://ci.concourse-ci.org} is our Concourse instance that
+  builds, tests, and ships Concourse itself. It is publicly viewable and also
+  hosts a handful of example pipelines which are referenced from the
+  documentation \link{here}{https://concourse-ci.org/examples.html}.
+
+  \section{
+    \title{Operation}
+
+    TODO: Can we move the metrics DNS to metrics.concourse-ci.org?
+
+    TODO: How do we deploy prod?
+
+    TODO: How is the prod database managed/deployed?
+    TODO: How do I connect to the prod database?
+
+    TODO: How do I find the logs of the `web` and `worker` nodes?
+    TODO: How do I take a stack dump or debug a `web` node?
+  }
+}
+
+\section{
+  \title{\code{hush-house} environment}
+
+  \link{Hush House}{https://hush-house.pivotal.io} is a multi-tenant
+  Concourse cluster being used by teams within Pivotal. It is our
+  responsibility to keep it running as efficiently and smoothly as possible -
+  hence the \reference{hush-house-slis}.
+
+  \section{
+    \title{Operation}
+
+    TODO: How do we deploy Hush House?
+
+    TODO: How is the Hush House database managed/deployed?
+    TODO: How do I connect to the Hush House database?
+
+    TODO: How do I find the logs of the `web` and `worker` nodes?
+    TODO: How do I take a stack dump or debug a `web` node?
+  }
+
+  \section{
+    \title{Hush-House SLIs}
+
+    TODO: What do I look for when I get paged?
+  }
+}
+
+\section{
+  \title{\code{wings} environment}
+
+  \link{Wings}{https://wings.pivotal.io} is the precursor to Hush-House. It
+  is deprecated and will be removed soon (probably by March 2020). You
+  probably don't have to know anything about it, but as long as the
+  environment still exists this page will at least acknowledge it.
+}

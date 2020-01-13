@@ -1,0 +1,42 @@
+\title{Tracks}
+
+In order to make onboarding and rotation less overwhelming, the scope of
+Concourse OSS is currently divided into three tracks with less frequent
+rotation between them. Each track has its own backlog, IPM, and retro, so
+they're kinda like sub-teams within Concourse.
+
+Rotation between tracks is a developing process; for more information see
+\reference{track-rotation}.
+
+\section{
+  \title{UX track}
+
+  The UX track is all about the front-end user experience, i.e. the web UI.
+
+  Concourse's web UI is written in \link{Elm}{https://elm-lang.org}, which is
+  a fairly new and shiny functional programming language which brings a
+  pretty refreshing and simple paradigm to front-end development.
+}
+
+\section{
+  \title{Core track}
+
+  The Core domain is centered around the concepts and abstractions that
+  Concourse provides.
+
+  The primary challenge of this track is to arrive at a simple set of
+  primitives that accomodate the many workflows of Concourse's users without
+  turning into a complicated mess of overlapping or extraneous functionality.
+}
+
+\section{
+  \title{Runtime track}
+
+  The Runtime domain brings Concourse to life, executing pipeline workloads
+  as containers running across a pool of workers.
+
+  Runtime challenges include efficient container scheduling across worker
+  pools, supporting multiple runtimes (Kubernetes, containerd, possibly Nomad
+  in the future), managing artifacts such as task and resource caches, and
+  improving the overall resiliency and efficiency of the user's workloads.
+}

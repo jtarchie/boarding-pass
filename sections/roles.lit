@@ -1,0 +1,68 @@
+\title{Roles}
+
+\section{
+  \title{Open-source Lead}
+
+  The open-source Concourse project lead is \link{Alex
+  Suraci}{https://github.com/vito}, who is also writing this document - hi!
+
+  My responsibility is to develop the Concourse product so that it meets the
+  needs of its open-source community. This also means enabling the growth of
+  community members into contributors so that our team does not become a
+  bottleneck for development and support.
+}
+
+\section{
+  \title{Product & Design}
+
+  The role of product & design is to engage with each of our stakeholders
+  (whether they're customers or community members) and collaborate to devise
+  roadmaps for our team to execute on.
+
+  \link{Scott Foster}{https://github.com/scottietremendous} develops the
+  roadmap for enterprise users, i.e. Pivotal/VMware customers, who use
+  Concourse at large scale and need it to be resilient, efficient, and easy
+  to operate.
+
+  \link{Alex Suraci}{https://github.com/vito} (hi again!) develops the
+  long-term core roadmap based on the many different workflows found in the
+  open-source community - i.e. the \italic{continuous thing doing} aspect of
+  Concourse.
+
+  \link{Daniel de Repentigny}{https://github.com/danielder-pivotal} keeps us
+  grounded in reality, addressing the needs of existing users who are largely
+  satisfied with Concourse's feature set, but need it to be more polished,
+  coherent, and easy to use \italic{in anger}.
+
+  \link{Lindsay Auchinachie}{https://github.com/Lindsayauchin} and
+  \link{Matthew Periera}{https://github.com/matthewpereira} work together to
+  build a clean and intuitive user experience for Concourse, interviewing
+  open-source users and customers to build and demo prototypes to make sure
+  we're building the right thing.
+
+  High-impact parts of the roadmap are proposed through \reference{rfcs}
+  where we can work directly with the community and as a team to validate and
+  come to consensus on new ideas.
+}
+
+\section{
+  \title{Contributors}
+
+  Technically, a \italic{Concourse contributor} is anyone who contributes to
+  the improvement of Concourse. This includes everyone mentioned on this page
+  and all members of the Concourse team.
+
+  Coloquially, this usually means someone who submits pull requests.
+}
+
+\section{
+  \title{Track Anchor}
+
+  Each \reference{tracks}{track} has a \italic{track anchor}.
+}
+
+\section{
+  \title{Technical Writer}
+
+  Just kidding! We don't really have one. But we need one!
+}
