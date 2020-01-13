@@ -48,21 +48,17 @@
 \section{
   \title{Contributors}
 
-  Technically, a \italic{Concourse contributor} is anyone who contributes to
-  the improvement of Concourse. This includes everyone mentioned on this page
-  and all members of the Concourse team.
+  A \italic{Concourse contributor} is anyone who contributes to the improvement
+  of Concourse. This includes everyone mentioned on this page, all members of
+  the Concourse team, and anyone in the community who contributes their time.
 
-  Coloquially, this usually means someone who submits pull requests.
-}
-
-\section{
-  \title{Track Anchor}
-
-  Each \reference{tracks}{track} has a \italic{track anchor}.
+  Coloquially, this usually means people who submit pull requests, i.e. those
+  who contribute code.
 }
 
 \section{
   \title{Technical Writer}
 
-  Just kidding! We don't really have one. But we need one!
+  Just kidding! We don't really have one. But we need one! I write most of the
+  docs right now.
 }
