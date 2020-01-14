@@ -1,7 +1,74 @@
 \title{Processes}
 
 \section{
-  \title{Pairing & Code Review}
+  \title{IPMs}
+
+  An IPM, or Iteration Planning Meeting, is meeting held every Monday by each
+  \reference{teams}{team} or \reference{tracks}{track}.
+
+  The outcome of an IPM is to have a clear idea of what your team will be
+  working on for that week, in the form of GitHub issues and projects. This is
+  typically done through the \link{Cadet Projects
+  page}{https://project.concourse-ci.org/projects} but may also be done
+  directly on GitHub.
+
+  To build a consensus on the difficulty of each task ahead, engineers on the
+  team will typically assign each of the issues with one of the following
+  labels:
+
+  \definitions{
+    \definition{\code{size/small}}{
+      Low effort required with well-defined scope.
+    }
+  }{
+    \definition{\code{size/medium}}{
+      An easily manageable amount of work. Well-defined scope, few unknowns.
+    }
+  }{
+    \definition{\code{size/large}}{
+      A ton of work, possibly in multiple places. Mostly understood, but there
+      may be unknown unknowns.
+    }
+  }{
+    \definition{\code{size/x-large}}{
+      This needs to be split up and/or mapped out more clearly before we can
+      begin.
+    }
+  }
+
+  IPMs are also a great time to bring up GitHub issues or pull requests that
+  you've noticed or submitted yourself in order to discuss them with the team
+  and prioritize them.
+}
+
+\section{
+  \title{Retros}
+
+  A retro is held every Friday by each \reference{teams}{team} or
+  \reference{tracks}{track}. Currently we alternate team-wide retros and
+  track-only retros (a.k.a. "small-team" retros) on a weekly basis, though we
+  overrule the schedule fairly often.
+
+  The outcome of a retro is camaraderie and surfacing of pain felt through the
+  past iteration or few iterations to lead to action items to tackle in the
+  coming iterations.
+
+  Weekly retros are open-ended, and can touch on technical issues, processes,
+  or just general airing of grievances. More targeted retros (i.e. tech retros,
+  process retros) are usually scheduled ad-hoc. Feel free to suggest them
+  within your team!
+}
+
+\section{
+  \title{Pairing}
+}
+
+\section{
+  \title{Reviewing PRs}
+}
+
+\section{
+  \title{RFCs}
 }
 
 \section{
@@ -9,19 +76,5 @@
 }
 
 \section{
-  \title{IPMs}
-
-  TODO: Issue sizing
-}
-
-\section{
-  \title{RFCs}
-
-  RFCs are a way for anyone in the community, including Concourse team
-  members, to collaborate on ideas for Concourse.
-}
-
-\section{
   \title{Design Studios}
 }
-
