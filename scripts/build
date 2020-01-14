@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e -u
+
+root="$(cd $(dirname $0)/.. && pwd)"
+
+go get github.com/vito/booklit/cmd/booklit
+
+booklit --in $root/index.lit --html-templates $root/html/ "$@"

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e -u -x
+
+root="$(cd $(dirname $0)/.. && pwd)"
+
+cd $root
+
+if ! [ -d gh-pages ]; then
+  git clone https://github.com/vito/boarding-pass \
+    --branch gh-pages
+fi
+
+cd gh-pages
+
+git pull origin gh-pages
+git reset --hard
+git rm -r .
+$root/scripts/build -o .
+cp -a $root/css .
+git add .
+
+git commit -m "build @ $(date)"
+git push origin gh-pages
