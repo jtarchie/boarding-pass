@@ -61,20 +61,90 @@
 
 \section{
   \title{Pairing}
+
+  Pairing is an implied part of our process, though it is not enforced.
+  Everything is submitted through pull requests, so pairing is not technically
+  necessary for code review, but it is still recommended for...you know, all
+  the other benefits to pairing.
+
+  \section{
+    \title{Soloing}
+
+    That being said, some times soloing is the right thing to do. If you're
+    working on something that's frankly pretty boring to pair on, feel free to
+    solo while being conscious of things you may want to consult with the team
+    about; prefer over-communication to no communication. If during your
+    onboarding you would prefer to just take your time and figure things out on
+    your own for a bit, that can work too.
+  }
+
+  \section{
+    \title{Pair Rotation}
+
+    Pair rotation within your \reference{tracks}{track} or
+    \reference{teams}{team} is encouraged, but rotation frequency is undefined.
+    Some enjoy more rapid rotation. Some would rather stick on their story for
+    a while so they can continue learning.
+
+    Rotation frequency is a frequent topic for retros. The general
+    recommendation is to just consider it every morning. If you can rotate,
+    prefer to rotate, but if that would be particularly anxiety-inducing, don't
+    worry about it.
+  }
+}
+
+\section{
+  \title{Tracks}{tracks-process}
+
+  "Tracks" is our attempt to mitigate the context whiplash involved in rotating
+  through too many different parts of Concourse too frequently. For a list and
+  description of the tracks, see \reference{tracks}.
+
+  Tracks effectively behave as teams within the team. Each track has its own
+  \reference{ipms}{IPM} with its own backlog, and a \reference{retros}{retro}
+  for each track is scheduled every other week (alternating with a "big retro"
+  across all teams).
+
+  Tracks are not meant to be enforced barriers within the team. They are meant
+  to be guide rails to help individual team members who would rather spend most
+  of their time in one context. If you are every curious about what another
+  track is doing, feel free to attend their meetings as well.
+
+  \section{
+    \title{Track Rotation}
+
+    Rotating between tracks is not an active process right now, but it's
+    something we'd like to explore.
+
+    An experiment we will likely try soon is to do epic-based pairing and
+    rotation instead of track-based pairing. (More on this soon.)
+  }
 }
 
 \section{
   \title{Reviewing PRs}
+
+  Pull requests are just as if not more important than anything in the backlog.
+  It is imperative that we be responsive and kind to those who are trying to
+  help us out. Remember: it's OK if you're not able to review something
+  quickly, and over-communicating is never a bad thing.
+
+  For a more in depth overview on how to review pull requests, check out
+  \link{How to Process
+  PRs}{https://github.com/concourse/concourse/wiki/How-to-Process-PRs} in our
+  GitHub wiki.
 }
 
 \section{
   \title{RFCs}
-}
 
-\section{
-  \title{Track Rotation}{track-rotation}
+  Substantial proposals to the roadmap are almost always made through an RFC.
+  The process is described in the \link{\code{concourse/rfcs}
+  repo}{https://github.com/concourse/rfcs#concourse-rfcs}.
 }
 
 \section{
   \title{Design Studios}
+
+  (TODO. Ask \link{Matthew Periera}{https://github.com/matthewpereira}!)
 }
