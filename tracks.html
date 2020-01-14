@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tracks - Boarding Pass</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/iosevka.css" />
+    <link rel="stylesheet" type="text/css" href="css/booklit.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,700|Roboto+Slab:300,400,700" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="side">
+      
+
+<div class="context">
+  <nav>
+    <div class="top">
+      
+<a href="index.html" >Boarding Pass</a>
+
+    </div>
+
+    
+    <input type="checkbox" class="toggle" checked />
+    <span class="arrow"></span>
+    <div class="children">
+      <table>
+      
+        <tr>
+          <td class="number-cell" align="right">1&nbsp;</td>
+          <td class="title-cell">
+<a href="roles.html" >Roles</a>
+</td>
+        </tr>
+      
+        <tr>
+          <td class="number-cell" align="right">2&nbsp;</td>
+          <td class="title-cell">
+<a href="teams.html" >Teams</a>
+</td>
+        </tr>
+      
+        <tr>
+          <td class="number-cell" align="right">3&nbsp;</td>
+          <td class="title-cell">
+<a href="tracks.html"  class="self">Tracks</a>
+</td>
+        </tr>
+      
+        <tr>
+          <td class="number-cell" align="right">4&nbsp;</td>
+          <td class="title-cell">
+<a href="deployments.html" >Deployments</a>
+</td>
+        </tr>
+      
+        <tr>
+          <td class="number-cell" align="right">5&nbsp;</td>
+          <td class="title-cell">
+<a href="processes.html" >Processes</a>
+</td>
+        </tr>
+      
+        <tr>
+          <td class="number-cell" align="right">6&nbsp;</td>
+          <td class="title-cell">
+<a href="glossary.html" >Glossary</a>
+</td>
+        </tr>
+      
+      </table>
+    </div>
+    
+  </nav>
+</div>
+
+
+<div class="context">
+  <nav>
+    <div class="top">
+      3&nbsp;
+<a href="tracks.html"  class="self">Tracks</a>
+
+    </div>
+
+    <input type="checkbox" class="toggle" checked />
+    <span class="arrow"></span>
+    <div class="children">
+      <table>
+      
+        <tr>
+          <td class="number-cell" align="right">3.1&nbsp;</td>
+          <td class="title-cell">
+<a href="tracks.html#ux-track" >UX track</a>
+</td>
+        </tr>
+      
+        <tr>
+          <td class="number-cell" align="right">3.2&nbsp;</td>
+          <td class="title-cell">
+<a href="tracks.html#core-track" >Core track</a>
+</td>
+        </tr>
+      
+        <tr>
+          <td class="number-cell" align="right">3.3&nbsp;</td>
+          <td class="title-cell">
+<a href="tracks.html#runtime-track" >Runtime track</a>
+</td>
+        </tr>
+      
+      </table>
+    </div>
+  </nav>
+</div>
+
+
+
+    </div>
+    <div class="page">
+      <h1 class="section-header"><a name="tracks"></a><span class="section-number">3 </span>Tracks</h1>
+
+<p>In order to make onboarding and rotation less overwhelming, the scope of Concourse OSS is currently divided into three tracks with less frequent rotation between them. Each track has its own backlog, IPM, and retro, so they&#39;re kinda like sub-teams within Concourse.</p><p>Rotation between tracks is a developing process; for more information see <a href="processes.html#track-rotation">Track Rotation</a>.</p>
+
+
+  
+    <h2 class="section-header"><a name="ux-track"></a><span class="section-number">3.1 </span>UX track</h2>
+
+<p>The UX track is all about the front-end user experience, i.e. the web UI.</p><p>Concourse&#39;s web UI is written in <a href="https://elm-lang.org">Elm</a>, which is a fairly new and shiny functional programming language which brings a pretty refreshing and simple paradigm to front-end development.</p>
+
+
+  
+
+  
+    <h2 class="section-header"><a name="core-track"></a><span class="section-number">3.2 </span>Core track</h2>
+
+<p>The Core domain is centered around the concepts and abstractions that Concourse provides.</p><p>The primary challenge of this track is to arrive at a simple set of primitives that accomodate the many workflows of Concourse&#39;s users without turning into a complicated mess of overlapping or extraneous functionality.</p>
+
+
+  
+
+  
+    <h2 class="section-header"><a name="runtime-track"></a><span class="section-number">3.3 </span>Runtime track</h2>
+
+<p>The Runtime domain brings Concourse to life, executing pipeline workloads as containers running across a pool of workers.</p><p>Runtime challenges include efficient container scheduling across worker pools, supporting multiple runtimes (Kubernetes, containerd, possibly Nomad in the future), managing artifacts such as task and resource caches, and improving the overall resiliency and efficiency of the user&#39;s workloads.</p>
+
+
+  
+
+  
+
+    </div>
+  </body>
+</html>
