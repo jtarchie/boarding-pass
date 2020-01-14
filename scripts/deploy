@@ -18,6 +18,7 @@ git reset --hard
 git rm -r .
 $root/scripts/build -o .
 cp -a $root/css .
+cp -a $root/favicon.ico .
 git add .
 
 git commit -m "build @ $(date)"
