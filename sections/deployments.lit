@@ -11,13 +11,9 @@ remember when you're panicking.
   providing the landing page and all documentation for the latest version of
   Concourse.
 
-  \section{
-    \title{Operation}
-
-    The docs are automatically built from the \link{\code{concourse/docs}
-    repo}{https://github.com/concourse/docs} and deployed via GitHub pages
-    whenever a new version of Concourse is released.
-  }
+  The docs are automatically built from the \link{\code{concourse/docs}
+  repo}{https://github.com/concourse/docs} and deployed via GitHub pages
+  whenever a new version of Concourse is released.
 }
 
 \section{
@@ -28,19 +24,15 @@ remember when you're panicking.
   hosts a handful of example pipelines which are referenced from the
   documentation \link{here}{https://concourse-ci.org/examples.html}.
 
-  \section{
-    \title{Operation}
+  TODO: Can we move the metrics DNS to metrics.concourse-ci.org?
 
-    TODO: Can we move the metrics DNS to metrics.concourse-ci.org?
+  TODO: How do we deploy prod?
 
-    TODO: How do we deploy prod?
+  TODO: How is the prod database managed/deployed?
+  TODO: How do I connect to the prod database?
 
-    TODO: How is the prod database managed/deployed?
-    TODO: How do I connect to the prod database?
-
-    TODO: How do I find the logs of the `web` and `worker` nodes?
-    TODO: How do I take a stack dump or debug a `web` node?
-  }
+  TODO: How do I find the logs of the `web` and `worker` nodes?
+  TODO: How do I take a stack dump or debug a `web` node?
 }
 
 \section{
@@ -51,17 +43,13 @@ remember when you're panicking.
   responsibility to keep it running as efficiently and smoothly as possible -
   hence the \reference{hush-house-slis}.
 
-  \section{
-    \title{Operation}
+  TODO: How do we deploy Hush House?
 
-    TODO: How do we deploy Hush House?
+  TODO: How is the Hush House database managed/deployed?
+  TODO: How do I connect to the Hush House database?
 
-    TODO: How is the Hush House database managed/deployed?
-    TODO: How do I connect to the Hush House database?
-
-    TODO: How do I find the logs of the `web` and `worker` nodes?
-    TODO: How do I take a stack dump or debug a `web` node?
-  }
+  TODO: How do I find the logs of the `web` and `worker` nodes?
+  TODO: How do I take a stack dump or debug a `web` node?
 
   \section{
     \title{SLIs}{hush-house-slis}
@@ -87,11 +75,8 @@ remember when you're panicking.
   developed and shipped by the \reference{duty-free-team} as a central
   repository of community-submitted (and supported) resource types.
 
-  \section{
-    \title{Operation}
-
-    I dunno, ask Bishoy!
-  }
+  I dunno how to deploy it, ask Bishoy! (...and then teach me so I can update
+  this!)
 }
 
 \section{
@@ -101,10 +86,6 @@ remember when you're panicking.
   \link{\code{vito/cadet}}{https://github.com/vito/cadet}, a side-project for
   making our day-to-day interactions with GitHub a bit easier.
 
-  \section{
-    \title{Operation}
-
-    It is currently deployed and maintained by Alex willy-nilly. (I'll automate
-    it eventually! ...I promise!)
-  }
+  It is currently deployed and maintained by Alex willy-nilly. (I'll automate
+  it eventually! ...I promise!)
 }
