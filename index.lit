@@ -15,9 +15,8 @@ Quick links:
 }
 
 This team may feel a bit different. Our customer is the open-source community,
-and there are many stakeholders; every software engineer on earth should
-probably be using CI/CD. Our challenge is to continue to build Concourse as a
-product that doesn't cut corners and doesn't grow into a tangled web.
+and there are many stakeholders: every software engineer on Earth should
+probably be using CI/CD.
 
 Value is delivered not only through shipping features, but through engaging
 with the community and enabling community members to grow into contributors.
@@ -29,18 +28,10 @@ you're up to speed. This is a feeling that we're all familiar with. If you ever
 feel overwhelmed or just have questions don't hesitate to reach out to anyone
 in the \reference{roles} page or any of your teammates for support.
 
-To make onboarding a bit easier, we divided the required knowledge about the
-Concourse codebase into separate \reference{tracks}. Each track has a different
-subject matter and works with different languages and tools. You're free to
-rotate between tracks at any time, though you may want to try sticking with one
-for a while at first.
-
-The front-end is written in \link{Elm}{https://elm-lang.org} and everything
-else is written in \link{Go}{https://golang.org}. This document, as well as all
-of the Concourse documentation, is written using
-\link{Booklit}{https://github.com/vito/booklit}. If you ever say anything bad
-about it it will make Alex sad. The rest of what you'll need to know really
-depends on the track, so go check them out!
+To make onboarding a bit easier, we divided the scope of the Concourse codebase
+into separate \reference{tracks}. Each track has a different subject matter and
+works with different languages and tools. You're free to rotate between tracks
+at any time, though you may want to try sticking with one for a while at first.
 
 \split-sections
 
