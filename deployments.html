@@ -142,13 +142,13 @@
 
     </div>
     <div class="page">
-      <h1 class="section-header"><a name="deployments"></a><span class="section-number">4 </span>Deployments</h1>
+      <h1 class="section-header"><a id="deployments"></a><span class="section-number">4 </span>Deployments</h1>
 
 <p>The Concourse team maintains a few deployments. The day will eventually come when you have to do something to one of them. This page is here for you to remember when you&#39;re panicking.</p>
 
 
   
-    <h2 class="section-header"><a name="docs-website"></a><span class="section-number">4.1 </span>Docs (<code>concourse-ci.org</code>)</h2>
+    <h2 class="section-header"><a id="docs-website"></a><span class="section-number">4.1 </span>Docs (<code>concourse-ci.org</code>)</h2>
 
 <p>The <a href="https://concourse-ci.org">Concourse Docs</a> is the face of Concourse, providing the landing page and all documentation for the latest version of Concourse.</p><p>The docs are automatically built from the <a href="https://github.com/concourse/docs"><code>concourse/docs</code> repo</a> and deployed via GitHub pages whenever a new version of Concourse is released.</p>
 
@@ -156,7 +156,7 @@
   
 
   
-    <h2 class="section-header"><a name="ci-environment"></a><span class="section-number">4.2 </span>CI (<code>ci.concourse-ci.org</code>)</h2>
+    <h2 class="section-header"><a id="ci-environment"></a><span class="section-number">4.2 </span>CI (<code>ci.concourse-ci.org</code>)</h2>
 
 <p><a href="https://ci.concourse-ci.org">CI</a> is our Concourse instance that builds, tests, and ships Concourse itself. It is publicly viewable and also hosts a handful of example pipelines which are referenced from the documentation <a href="https://concourse-ci.org/examples.html">here</a>.</p><p>TODO: Can we move the metrics DNS to metrics.concourse-ci.org?</p><p>TODO: How do we deploy prod?</p><p>TODO: How is the prod database managed/deployed? TODO: How do I connect to the prod database?</p><p>TODO: How do I find the logs of the `web` and `worker` nodes? TODO: How do I take a stack dump or debug a `web` node?</p>
 
@@ -164,13 +164,13 @@
   
 
   
-    <h2 class="section-header"><a name="hush-house"></a><span class="section-number">4.3 </span>Hush House (<code>hush-house.pivotal.io</code>)</h2>
+    <h2 class="section-header"><a id="hush-house"></a><span class="section-number">4.3 </span>Hush House (<code>hush-house.pivotal.io</code>)</h2>
 
 <p><a href="https://hush-house.pivotal.io">Hush House</a> is a multi-tenant Concourse cluster being used by teams within Pivotal. It is our responsibility to keep it running as efficiently and smoothly as possible - hence the <a href="deployments.html#hush-house-slis">SLIs</a>.</p><p>TODO: How do we deploy Hush House?</p><p>TODO: How is the Hush House database managed/deployed? TODO: How do I connect to the Hush House database?</p><p>TODO: How do I find the logs of the `web` and `worker` nodes? TODO: How do I take a stack dump or debug a `web` node?</p>
 
 
   
-    <h3 class="section-header"><a name="hush-house-slis"></a><span class="section-number">4.3.1 </span>SLIs</h3>
+    <h3 class="section-header"><a id="hush-house-slis"></a><span class="section-number">4.3.1 </span>SLIs</h3>
 
 <p>TODO: What do I look for when I get paged?</p>
 
@@ -180,7 +180,7 @@
   
 
   
-    <h2 class="section-header"><a name="wings"></a><span class="section-number">4.4 </span>Wings (<code>wings.pivotal.io</code>)</h2>
+    <h2 class="section-header"><a id="wings"></a><span class="section-number">4.4 </span>Wings (<code>wings.pivotal.io</code>)</h2>
 
 <p><a href="https://wings.pivotal.io">Wings</a> is the precursor to Hush-House. It is deprecated and will be removed soon (probably by March 2020). You probably don&#39;t have to know anything about it, but as long as the environment still exists this page will at least acknowledge it.</p>
 
@@ -188,7 +188,7 @@
   
 
   
-    <h2 class="section-header"><a name="duty-free"></a><span class="section-number">4.5 </span>Duty Free (<code>resource-types.concourse-ci.org</code>)</h2>
+    <h2 class="section-header"><a id="duty-free"></a><span class="section-number">4.5 </span>Duty Free (<code>resource-types.concourse-ci.org</code>)</h2>
 
 <p><a href="https://resource-types.concourse-ci.org">Duty Free</a> is a deployment of <a href="https://github.com/concourse/resource-types-website"><code>concourse/resource-types-website</code></a>, developed and shipped by the <a href="teams.html#duty-free-team">Duty Free team</a> as a central repository of community-submitted (and supported) resource types.</p><p>I dunno how to deploy it, ask Bishoy! (...and then teach me so I can update this!)</p>
 
@@ -196,7 +196,7 @@
   
 
   
-    <h2 class="section-header"><a name="cadet"></a><span class="section-number">4.6 </span>Cadet (<code>project.concourse-ci.org</code>)</h2>
+    <h2 class="section-header"><a id="cadet"></a><span class="section-number">4.6 </span>Cadet (<code>project.concourse-ci.org</code>)</h2>
 
 <p><a href="https://project.concourse-ci.org">Cadet</a> is a deployment of <a href="https://github.com/vito/cadet"><code>vito/cadet</code></a>, a side-project for making our day-to-day interactions with GitHub a bit easier.</p><p>It is currently deployed and maintained by Alex willy-nilly. (I&#39;ll automate it eventually! ...I promise!)</p>
 
